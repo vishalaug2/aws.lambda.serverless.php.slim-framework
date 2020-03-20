@@ -30,13 +30,6 @@ $app->addRoutingMiddleware();
  */
 $errorMiddleware = $app->addErrorMiddleware(true, true, true);
 
-$app->get('/dev', function (Request $request, Response $response, $args) {
-    $response->getBody()->write('Hello world!');
-    return $response;
-});
-
-
-
 $app->get('/phpinfo', function (Request $request, Response $response, $args) {
     $response->getBody()->write(phpinfo());
     return $response;   
