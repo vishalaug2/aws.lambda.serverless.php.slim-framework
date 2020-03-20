@@ -1,4 +1,4 @@
-service: app
+service: aws-lambda-serverless-php-slim-framework
 
 provider:
     name: aws
